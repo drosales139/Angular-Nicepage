@@ -5,8 +5,8 @@
   <div fxLayout='column' fxLayout.gt-xs="row" fxFlexAlign="center" class="content--fresh">
     <div fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center" class="item--info">
       <div fxLayout='column' fxFlex.gt-sm="90%" class="item--info__content" >
-        <span class="item__title-banner"><strong>FRESH FOOD</strong> </span> 
-        <span class="item__subtitle-banner">Organic</span>
+        <span class="item__title-banner"  ngClass.gt-sm = "banner-xs " ><strong>FRESH FOOD</strong> </span> 
+        <span class="item__subtitle-banner" ngClass.gt-sm="subtitle-banner">Organic</span>
         <p fxFlex.gt-lg="60%" class="item__desc col-xs col-sm-10 col-md-10">
           How your food is grown or raised can have a major impact on your
           mental and emotional health as well as the environment.
@@ -21,29 +21,29 @@
   <div fxLayout='column' fxFlexAlign="center" class="content--work">    
     <div fxLayout='column'fxLayoutAlign="center center" class="content_work__title">
       <p fxFlex="100%" class="title_work">How It Works?</p>
-      <p fxFlex="100%" class="item__desc" style="color: white; margin-bottom: 15px; padding: 0 35px;">
+      <p fxFlex="100%" fxFlex.gt-md="80%" class="item__desc" style="color: white; margin-bottom: 15px; padding: 0 35px;">
         Organic agriculture, which is governed by strict government standards, requires that products bearing the organic label
         are produced without the use of toxic and persistent pesticides and synthetic nitrogen fertilizers, antibiotics,
         synthetic hormones, genetic engineering or other excluded practices, sewage sludge, or irradiation.
       </p>
     </div>
     <div fxLayout='column' fxLayout.gt-xs="row grap" fxLayoutAlign="center center">
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="30%" class="item--img"></div>
-      <div fxFlex.gt-xs="45%" fxLayout='column' fxFlex.gt-sm="30%" fxLayoutAlign="center center" class="item--text">
+      <div class="item--img"></div>
+      <div fxLayout='column' fxLayoutAlign="center center"  ngClass ="item--text text">
         <img src="../assets/images/icon-vaca.png" alt="icono vaca" width="50px">
         <p class="item__title">Organic Farming</p>
         <p class="item__desc">Organic farming practices reduce pollution, conserve water, reduce soil erosion, increase soil fertility, and use less
         energy, is also better for birds</p>
       </div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="30%" class="item--img"></div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="30%" fxLayout='column' fxLayoutAlign="center center"  class="item--text">
+      <div class="item--img"></div>
+      <div fxLayout='column' fxLayoutAlign="center center"  ngClass ="item--text text">
         <img src="../assets/images/icon-hoja.png" alt="icono hoja" width="50px">
         <p class="item__title">Animal husbandry</p>
         <p class="item__desc">The animal production system, may be broadly classified as traditional, conventional and organic with their distinct
         characteristics.</p>
       </div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="30%" class="item--img"></div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="30%" fxLayout='column' fxLayoutAlign="center center" class="item--text">
+      <div class="item--img"></div>
+      <div fxLayout='column' fxLayoutAlign="center center" ngClass ="item--text text">
         <img src="../assets/images/icon-tractor.png" alt="icono tractor" width="50px">
         <p class="item__title">Arable Farming</p>
         <p class="item__desc">Organic foods often have more beneficial nutrients, such as antioxidants, than their conventionally-grown counterparts
@@ -57,7 +57,7 @@
     </div>
     <div fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center" class="item--info">
         <div fxLayout='column' fxFlex.gt-sm="90%" class="item--info__content" >
-          <p fxLayout='row' fxFlexAlign="start" class="item__title-banner-2"> ORGANIC FARM</p> 
+          <p fxLayout='row' fxFlexAlign="start" class="item__title-banner-2" ngClass.gt-sm="subtitle-banner-2"> ORGANIC FARM</p> 
           <span class="item__subtitle-banner-l">Our Promise</span>
           <p fxFlex.gt-lg="60%" class="item__desc">
             We bring the season’s best mix of organic produce and hand-crafted farm products conveniently to your door by growing
@@ -72,7 +72,7 @@
     <div fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center" class="item--info">
         <div fxLayout='column' fxFlex.gt-sm="90%" class="item--info__content">
           <p fxLayout='row' fxFlexAlign="center" class="item__title-banner-2">HEALT BENEFITS </p> 
-          <span class="item__subtitle-banner-3">Of Organic Food</span>
+          <span class="item__subtitle-banner-3" ngClass.gt-sm="subtitle-banner-3">Of Organic Food</span>
           <p fxFlex.gt-lg="60%" class="item__desc">
             We bring the season’s best mix of organic produce and hand-crafted farm products conveniently to your door by growing
             and partnering with local farms and artisans in your area.
@@ -93,7 +93,7 @@
         produce varieties that grow well and taste great.
       </p>
     </div>
-    <div fxLayout='column' fxLayout.gt-xs="row grap" fxLayoutAlign="space-around center">
+    <div fxLayout='column' fxLayout.gt-xs="row wrap" fxLayoutAlign="space-around center">
       <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%"  class="item--card">
         <p class="item__title-banner-2">VEGETABLES</p>
         <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
@@ -122,20 +122,20 @@
     </div>
     <div fxFlex="100%" fxFlex.gt-sm="50%" fxLayoutAlign="center center" class="item--info">
       <div fxLayout='column' fxFlex.gt-sm="90%" class="item--info__content">
-        <p fxLayout='row' fxFlexAlign="center" class="item__title-banner-2">HAPPY FARMING</p> 
-        <span class="item__subtitle-banner-3">Happy Animals</span>
-        <p class="item__desc">
+        <p fxLayout='row' class="item__title-banner-2" fxFlexAlign="center">HAPPY FARMING</p> 
+        <span class="item__subtitle-banner-3" fxFlexAlign="center">Happy Animals</span>
+        <p class="item__desc" ngClass="text__desc">
           The idea that happier farm animals produce higher quality food is not new, and it seems to be catching on. Several
           small scale egg farmers have transitioned to a “pastured” system, allowing their chickens to roam freely to eat grass
           and bugs the way nature intended. These chickens are not simply “free range” or “cage free,” which are terms that
           unfortunately don’t have much meaning in today’s food market
         </p>
-        <div class="item__button-orange"> LEARN MORE</div>
+        <div class="item__button-orange" fxFlexAlign="start" > LEARN MORE</div>
       </div>
     </div>
   </div>
 
-  <div fxLayout='column' fxLayout.gt-xs="row grap" fxLayoutAlign="center center" class="content--card">
+  <div fxLayout='column' fxLayout.gt-xs="row wrap" fxLayoutAlign="center center" class="content--card">
     <div fxLayout='row' fxFlexAlign="center" class="card">
       <div fxLayout='column' fxLayoutAlign="center center" class="card__info">
         <img src="../assets/images/types-1.jpeg" alt="fresas" >
