@@ -93,27 +93,27 @@
         produce varieties that grow well and taste great.
       </p>
     </div>
-    <div fxLayout='column' fxLayout.gt-xs="row wrap" fxLayoutAlign="space-around center">
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%"  class="item--card">
+    <div fxLayout='column' fxLayout.gt-xs="row wrap" fxLayoutAlign="center center" fxLayoutAlign.gt-xs="space-around center" ngClass.gt-sm="about-md">
+      <div fxFlex.gt-sm="23%"  class="item--card">
         <p class="item__title-banner-2">VEGETABLES</p>
         <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
       </div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--card">
+      <div fxFlex.gt-sm="23%" class="item--card">
         <p class="item__title-banner-2">HOW IT WORKS</p>
         <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
       </div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--card">
+      <div fxFlex.gt-sm="23%" class="item--card">
         <p class="item__title-banner-2">FLEXIBILITY</p>
         <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
       </div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--card">
+      <div fxFlex.gt-sm="23%" class="item--card">
         <p class="item__title-banner-2">FARM PRODUCTS</p>
         <p class="item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
       </div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--img2"></div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--img2"></div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--img2"></div>
-      <div fxFlex.gt-xs="45%" fxFlex.gt-sm="24%" class="item--img2"></div>
+      <div fxFlex.gt-sm="23%" class="item--img2"></div>
+      <div fxFlex.gt-sm="23%" class="item--img2"></div>
+      <div fxFlex.gt-sm="23%" class="item--img2"></div>
+      <div fxFlex.gt-sm="23%" class="item--img2"></div>
     </div>
   </div>
 
@@ -164,7 +164,7 @@
 
   <div fxLayout='column' fxLayout.gt-xs="row" fxFlexAlign="center" class="content--maps">
       <div fxFlex="100%" fxFlex.gt-sm="50%">
-        <agm-map [latitude]="lat" [longitude]="lng">
+        <agm-map [latitude]="lat" [longitude]="lng" ngClass.lt-sm="mapa">
           <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
         </agm-map>
       </div>
