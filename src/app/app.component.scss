@@ -1,279 +1,310 @@
-@import '../app/scss/variables';
+@import "../app/scss/variables";
 
-.content{
-    &--fresh{
-        background-color: $ligthgreen; 
+.content {
+  &--fresh {
+    background-color: $ligthgreen;
 
-        &_img{
-            width: 100%;
-            height: 400px;
-            background-position: center center;
-            background-size: cover;
-            background-image: url("../assets/images/banner.jpeg");
-        }
+    &_img {
+      background-position: center center;
+      min-height: 400px;
+      background-size: cover;
+      background-image: url("../assets/images/banner.jpeg");
     }
+  }
 
-    &--work{
-        width: 100%;
-        background-color: $green;
-        padding: 60px 10px;
+  &--work {
+    width: 100%;
+    background-color: $green;
+    padding: 25px 10px;
+  }
 
+  &--promise {
+    background-color: rgba(242, 246, 248, 1);
+
+    &_img {
+      width: 100%;
+      height: 400px;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-2.jpeg");
     }
+  }
 
-    &--promise{
-        background-color:  rgba(242,246,248,1);;
-       
-       &_img{
-            width: 100%;
-            height: 400px;
-            background-position: center center;
-            background-size: cover;
-            background-image: url("../assets/images/banner-2.jpeg");
-        }
+  &--healt {
+    &_img {
+      width: 100%;
+      height: 400px;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-3.jpeg");
     }
+  }
 
-    &--healt{
-        &_img{
-            width: 100%;
-            height: 400px;
-            background-position: center center;
-            background-size: cover;
-            background-image: url("../assets/images/banner-3.jpeg");
-        }
-    }
+  &--about {
+    background-image: linear-gradient(to bottom, $green 50%, lightgray 50%);
 
-    &--about{
-        width: 100%;
-        background-image: linear-gradient(to bottom, $green 57.8% ,lightgray 50%);
-        padding: 60px 10px;
-    }
-
-    &--happy{
-        &_img{
-            width: 100%;
-            height: 550px;
-            background-position: center center;
-            background-size: cover;
-            background-image: url("../assets/images/banner-4.jpeg");
-        }
-    }
-
-    &--card{
-        width: 100%;
-        background-color: lightblue;
-        padding: 0;
-    }
-
-    &--maps{
-        &_img{
-            height: 100%;
-            width: 100%;
-            min-height: 450px;
-            background-position: center center;
-            background-size: cover;
-            background-image: url("../assets/images/banner-5.jpeg");
-        }
-    }
-
-}
-
-
-.card{
-    height: 450px;
-    margin:0 35px;
-    &__info{
+    &_content{
         margin: 15px 0;
-        width: 300px;
-        padding: 20px;
-        background-color: $white;
-        img{
-            width: 150px;
-            height: 150px;
-            border-radius: 250px;
-        }
-        &_title{
-            padding: 15px 0;
-            font-size: 1.25rem;
-            font-family: $text;
-        }
+        justify-content: center;
     }
+
+    &_wrap{
+        flex: none;
+        justify-content: center;
+    }
+
+    &_margin{
+        margin-top: 25px;
+    }
+  }
+
+  &--happy {
+    &_img {
+      width: 100%;
+      height: 550px;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-4.jpeg");
+    }
+  }
+
+  &--card {
+    width: 100%;
+    background-color: lightblue;
+    padding: 0;
+  }
+
+  &--maps {
+    &_img {
+      height: 100%;
+      width: 100%;
+      min-height: 450px;
+      background-position: center center;
+      background-size: cover;
+      background-image: url("../assets/images/banner-5.jpeg");
+    }
+  }
 }
 
-.title{
-    &_work{
-        font-size: 2em;
-        color: white;
+.card {
+  height: 450px;
+  margin: 0 35px;
+  &__info {
+    margin: 15px 0;
+    width: 300px;
+    padding: 20px;
+    background-color: $white;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 250px;
     }
+    &_title {
+      padding: 15px 0;
+      font-size: 1.25rem;
+      font-family: $text;
+    }
+  }
+}
 
-    &_text{
-        text-align: center;
-    }
+.title {
+  &_work {
+    font-size: 2em;
+    color: white;
+  }
+
+  &_text {
+    text-align: center;
+  }
 }
 .item {
-    &--info{
-        &__content{
-            padding: 30px 40px;
-        }
+  &--info {
+    &__content {
+      padding: 30px 40px;
+    }
+  }
+
+  &__title-banner {
+    position: absolute;
+    left: 105px;
+    font-size: 1.15em;
+    color: $green;
+
+    &-2 {
+      font-size: 1.15em;
+      color: $green;
+      padding: 0 5px;
+    }
+  }
+
+  &__subtitle-banner {
+    font-family: $title;
+    color: $tomato;
+    font-size: 4em;
+    position: relative;
+
+    &-l {
+      font-family: $title;
+      color: $tomato;
+      font-size: 3em;
     }
 
-    &__title-banner{
-        position: absolute;
-        left: 105px;
-        font-size: 1.15em ;
-        color: $green;
-        
-        &-2{
-            font-size: 1.15em ;
-            color: $green;
-            padding: 0 5px;
-        }
+    &-3 {
+      font-family: $title;
+      color: $tomato;
+      font-size: 2.5em;
+    }
+  }
+
+  &__button {
+    width: 80px;
+    margin: 25px 0;
+    padding: 12px 20px;
+    font-size: 12px;
+    color: #ffffff;
+    border-radius: 20px;
+    background-color: $green;
+
+    &-orange {
+      width: 80px;
+      margin: 25px 0;
+      padding: 12px 20px;
+      font-size: 12px;
+      color: #ffffff;
+      border-radius: 20px;
+      background-color: $tomato;
+    }
+  }
+
+  &--text,
+  &--img {
+    width: 300px;
+    height: 290px;
+    margin: 10px;
+  }
+
+  &--text {
+    background-color: #fff;
+    img {
+      margin-top: 20px;
+    }
+  }
+
+  &__title {
+    font-size: 1.3em;
+  }
+
+  &__desc {
+    margin-top: 15px;
+    font-style: italic;
+    padding: 0 5px;
+    text-align: center;
+  }
+
+  &--img {
+    background-position: center center;
+    background-size: cover;
+
+    &:nth-child(1) {
+      background-image: url(../assets/images/grid-1.jpeg);
     }
 
-    &__subtitle-banner{
-        font-family: $title;
-        color: $tomato;
-        font-size: 4em;
-        position: relative;
-        
-        &-l{
-            font-family: $title;
-            color: $tomato;
-            font-size: 3em;
-        }
-
-        &-3{
-            font-family: $title;
-            color: $tomato;
-            font-size: 2.5em;
-        }
+    &:nth-child(3) {
+      background-image: url(../assets/images/grid-3.jpeg);
     }
 
-    &__button{
-        width: 80px;
-        margin:25px 0 ;
-        padding: 12px 20px;
-        font-size: 12px;
-        color: #ffffff;
-        border-radius: 20px;
-        background-color: $green;
+    &:nth-child(5) {
+      background-image: url(../assets/images/grid-2.jpeg);
+    }
+  }
 
-        &-orange{
-            width: 80px;
-            margin:25px 0;
-            padding: 12px 20px;
-            font-size: 12px;
-            color: #ffffff;
-            border-radius: 20px;
-            background-color: $tomato;
+  &--card,
+  &--img2_strawberry,
+  &--img2_plant,
+  &--img2_lettuce,
+  &--img2_fruits {
+    width: auto;
+    height: 200px;
+    margin: 5px 2px;
+  }
 
-        }
-        
+  &--card {
+    padding: 20px 0;
+    height: 160px;
+    background-color: #fff;
+  }
+
+  &--img2 {
+    &_strawberry {
+        background-position: center center;
+        background-size: cover;
+        background-image: url(../assets/images/grid-4.jpeg);
     }
 
-	&--text, &--img {
-        width: 300px;
-		height: 290px;
-        margin: 15px;
+    &_plant {
+        background-position: center center;
+        background-size: cover;
+        background-image: url(../assets/images/grid-5.jpeg);
     }
 
-    &--text{
-        background-color: #fff;
-        img{
-            margin-top: 20px;
-        }
+    &_lettuce {
+        background-position: center center;
+        background-size: cover;
+        background-image: url(../assets/images/grid-6.jpeg);
     }
-
-	&__title {
-        font-size: 1.3em;
-	}
-	
-	&__desc {
-        margin-top: 15px;
-        font-style: italic;
-        padding: 0 5px;
-        text-align: center;
-	}
-		
-	&--img {
-		background-position: center center;
-		background-size: cover;
-		
-		&:nth-child(1) {
-			background-image: url(../assets/images/grid-1.jpeg);
-		}
-		
-		&:nth-child(3) {
-			background-image: url(../assets/images/grid-3.jpeg);
-		}
-		
-		&:nth-child(5) {
-			background-image: url(../assets/images/grid-2.jpeg);
-		}
+    &_fruits {
+        background-position: center center;
+        background-size: cover;
+        background-image: url(../assets/images/grid-7.jpeg);
     }
-
-    &--card, &--img2 {
-        width: 300px;
-		height: 200px;
-    }
-
-    &--card{
-        margin: 5px 0;
-        padding: 20px 0;
-		height: 130px;
-        background-color: #fff;
-    }
-
-    &--img2 {
-        margin: 5px 0;
-		background-position: center center;
-		background-size: cover;
-		
-		&:nth-child(5) {
-			background-image: url(/assets/images/grid-4.jpeg);
-		}
-		
-		&:nth-child(6) {
-			background-image: url(../assets/images/grid-5.jpeg);
-		}
-		
-		&:nth-child(7) {
-			background-image: url(../assets/images/grid-6.jpeg);
-        }
-        &:nth-child(8) {
-			background-image: url(../assets/images/grid-7.jpeg);
-		}
-	}
-    
+  }
 }
 
-.banner-xs{
-    left: 145px;
+.banner-xs {
+  left: 145px;
 }
-.subtitle-banner{
-    font-size: 5em;
+.subtitle-banner {
+  font-size: 5em;
 
-    &-l{
-        font-size: 4em;
-    }
+  &-l {
+    font-size: 4em;
+  }
 
-    &-3{
-        font-size: 3em;
-    }
-} 
-
-.about-md{
-    padding: 0 40px;
+  &-3 {
+    font-size: 3em;
+  }
 }
-.text{
-    padding: 10px;
-    &__desc{
-        text-align: left;
-    }
+
+.about-md {
+  padding: 0 40px;
 }
-.mapa{
-    height: 450px;
+
+.img-md {
+  height: 90vh;
+
+  &_content {
+    height: 100vh;
+  }
+}
+
+.img-sm{
+    width: 300px;
+    height: 200px;
+}
+
+.card-hegth {
+  height: 80vh;
+}
+.text {
+  padding: 10px;
+  &__desc {
+    text-align: left;
+  }
+}
+.mapa {
+  height: 450px;
 }
 
 agm-map {
-    height: 100%;
+  height: 100%;
 }
